@@ -43,6 +43,7 @@
 #include <stellarino_timer.h>
 #include <stellarino_uart.h>
 #include <stellarino_spi.h>
+#include <stellarino_interrupts.h>
 
 #define INPUT 0
 #define OUTPUT 1

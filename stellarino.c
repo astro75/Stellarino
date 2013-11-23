@@ -51,6 +51,9 @@ void init(void)
     TimerIntRegister(WTIMER5_BASE, TIMER_A, delayInterrupt);	// Attach interrupt to function
     ROM_IntMasterEnable();	// Enable interrupts
     ROM_SysCtlPeripheralSleepEnable(SYSCTL_PERIPH_WTIMER5);
+
+    initInterrupts();
+
 }
 
 void pinMode(unsigned char pin, unsigned char mode)
